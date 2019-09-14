@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "421848172590",
+    "firebase_url": "https://helloworld1-f997f.firebaseio.com",
+    "project_id": "helloworld1-f997f",
+    "storage_bucket": "helloworld1-f997f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421848172590:android:b99be21a9cedd1b23cf7bf",
+        "android_client_info": {
+          "package_name": "com.example.routerater"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421848172590-qesie0j1ii1m9c8bsf3j2f9qcb0gei2p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.routerater",
+            "certificate_hash": "8ed8df70e479d5a3dbb1a83ab6145ab0948439fb"
+          }
+        },
+        {
+          "client_id": "421848172590-1oinh08qfqdsog06ca887tio65i93t7c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDheOL5Df4GTn-A0e77tKsi61LrbCp3yNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421848172590-1oinh08qfqdsog06ca887tio65i93t7c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
