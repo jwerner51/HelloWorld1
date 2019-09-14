@@ -23,12 +23,12 @@ public class chooseRoute extends AppCompatActivity {
 
         routeChoicesList = (ListView)findViewById(R.id.routeChoices);
 
-        routeChoiceItems.add("hello");
-        routeChoiceItems.add("world");
-        routeChoiceItems.add("plus");
-        routeChoiceItems.add("some");
-        routeChoiceItems.add("more");
-        routeChoiceItems.add("text");
+        routeChoiceItems.add("route 1");
+        routeChoiceItems.add("route 2");
+        routeChoiceItems.add("route 3");
+        routeChoiceItems.add("route 4");
+        routeChoiceItems.add("route 5");
+        routeChoiceItems.add("route 6");
 
         adapter = new ArrayAdapter(chooseRoute.this, android.R.layout.simple_list_item_1, routeChoiceItems);
         routeChoicesList.setAdapter(adapter);
