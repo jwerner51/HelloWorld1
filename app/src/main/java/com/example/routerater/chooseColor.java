@@ -19,7 +19,7 @@ public class chooseColor extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(chooseColor.this, chooseRoute.class);
+                Intent i = new Intent(chooseColor.this, chooseRoutePurple.class);
                 startActivity(i);
             }
         });

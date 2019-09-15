@@ -22,7 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".chooseRoute"></activity>
+        <activity android:name=".chooseRoutePurple"></activity>
+
     </application>
 
 </manifest>
