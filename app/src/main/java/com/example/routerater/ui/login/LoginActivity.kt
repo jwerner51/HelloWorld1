@@ -17,7 +17,7 @@ import android.widget.ProgressBar
 import android.widget.Toast
 
 import com.example.routerater.R
-import com.example.routerater.chooseColor
+import com.google.firebase.FirebaseApp
 
 class LoginActivity : AppCompatActivity() {
 
@@ -25,6 +25,7 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        FirebaseApp.initializeApp(this)
 
         setContentView(R.layout.activity_login)
 
@@ -112,8 +113,8 @@ class LoginActivity : AppCompatActivity() {
             Toast.LENGTH_LONG
         ).show()
 
-        val intent = Intent(this, chooseColor::class.java)
-        startActivity(intent)
+//        val intent = Intent(this, chooseColor::class.java)
+//        startActivity(intent)
     }
 
     private fun showLoginFailed(@StringRes errorString: Int) {
