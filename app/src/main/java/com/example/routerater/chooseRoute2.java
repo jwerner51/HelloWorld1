@@ -1,15 +1,15 @@
 package com.example.routerater;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class chooseRoute extends AppCompatActivity {
+public class chooseRoute2 extends AppCompatActivity {
 
     ListView routeChoicesList;
     List routeChoiceItems = new ArrayList();
@@ -19,7 +19,7 @@ public class chooseRoute extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_choose_route);
+        setContentView(R.layout.activity_choose_route2);
 
         routeChoicesList = (ListView)findViewById(R.id.routeChoices);
 
@@ -30,7 +30,7 @@ public class chooseRoute extends AppCompatActivity {
         routeChoiceItems.add("route 5");
         routeChoiceItems.add("route 6");
 
-        adapter = new ArrayAdapter(chooseRoute.this, android.R.layout.simple_list_item_1, routeChoiceItems);
+        adapter = new ArrayAdapter(chooseRoute2.this, android.R.layout.simple_list_item_1, routeChoiceItems);
         routeChoicesList.setAdapter(adapter);
     }
 }
