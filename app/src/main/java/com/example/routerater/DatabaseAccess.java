@@ -47,7 +47,7 @@ public class DatabaseAccess {
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 if (task.isSuccessful()) {
                     for (QueryDocumentSnapshot route : task.getResult()) {
-                        routesList.add(new Route((String)route.get("name"), route.getId()));
+                        routesList.add(new Route((String)route.get("name"), route.getId(),(int[])route.get("ratings")));
                     }
                 }
             }
