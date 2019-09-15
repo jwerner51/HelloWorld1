@@ -15,6 +15,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ProgressBar
 import android.widget.Toast
+import com.example.routerater.ColorPickerActivity
 
 import com.example.routerater.R
 import com.google.firebase.FirebaseApp
@@ -113,8 +114,8 @@ class LoginActivity : AppCompatActivity() {
             Toast.LENGTH_LONG
         ).show()
 
-//        val intent = Intent(this, chooseColor::class.java)
-//        startActivity(intent)
+        val intent = Intent(this, ColorPickerActivity::class.java)
+        startActivity(intent)
     }
 
     private fun showLoginFailed(@StringRes errorString: Int) {
