@@ -22,7 +22,7 @@
         android:layout_height="90dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Choose Color"
+        android:text="Choose Route"
         app:layout_constraintBottom_toTopOf="@+id/routeChoices"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView2"

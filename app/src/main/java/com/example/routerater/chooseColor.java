@@ -2,34 +2,27 @@ package com.example.routerater;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-
-import java.util.ArrayList;
-import java.util.List;
+import android.view.View;
+import android.widget.Button;
 
 public class chooseColor extends AppCompatActivity {
-
-    ListView tapeColorsList;
-    List tapeColors = new ArrayList();
-
-    ArrayAdapter adapter;
+    private Button b;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_color);
 
-        tapeColorsList = (ListView)findViewById(R.id.tapeColorsList);
-
-        tapeColors.add("Purple");
-        tapeColors.add("Blue");
-        tapeColors.add("Green");
-        tapeColors.add("Yellow");
-
-        adapter = new ArrayAdapter(chooseColor.this, android.R.layout.simple_list_item_1, tapeColors);
-        tapeColorsList.setAdapter(adapter);
+        b = findViewById(R.id.button2);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(chooseColor.this, chooseRoute.class);
+                startActivity(i);
+            }
+        });
 
     }
 }

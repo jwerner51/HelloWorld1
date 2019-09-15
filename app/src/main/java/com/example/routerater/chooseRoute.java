@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class chooseRoute2 extends AppCompatActivity {
+public class chooseRoute extends AppCompatActivity {
 
     ListView routeChoicesList;
     List routeChoiceItems = new ArrayList();
@@ -30,7 +30,7 @@ public class chooseRoute2 extends AppCompatActivity {
         routeChoiceItems.add("route 5");
         routeChoiceItems.add("route 6");
 
-        adapter = new ArrayAdapter(chooseRoute2.this, android.R.layout.simple_list_item_1, routeChoiceItems);
+        adapter = new ArrayAdapter(chooseRoute.this, android.R.layout.simple_list_item_1, routeChoiceItems);
         routeChoicesList.setAdapter(adapter);
     }
 }
