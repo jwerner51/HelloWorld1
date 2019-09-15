@@ -20,30 +20,18 @@
         android:layout_height="90dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Chose Tape Color"
+        android:text="Choose Tape Color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ScrollView
-        android:id="@+id/colorList"
+    <ListView
+        android:id="@+id/colorsList"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/colorTitle">
+        app:layout_constraintTop_toBottomOf="@+id/colorTitle" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <Button
-                android:id="@+id/colorButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="text" />
-        </LinearLayout>
-    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

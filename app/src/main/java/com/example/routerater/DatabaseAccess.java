@@ -1,5 +1,7 @@
 package com.example.routerater;
 
+import android.database.DatabaseErrorHandler;
+
 import androidx.annotation.NonNull;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -25,20 +27,33 @@ public class DatabaseAccess {
         routeRef.update("ratings", FieldValue.arrayUnion(rating));
     }
 
+    public interface OnGetDataListener{
+//        public void onStart();
+//        public void onSuccess;
+//        public void onFailed(DatabaseErrorHandler databaseErrorHandler);
+    }
+
     public Color[] getColors(){
         final ArrayList<Color> colorsList = new ArrayList<>();
+
         db.collection("colors").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 if (task.isSuccessful()) {
                     for (QueryDocumentSnapshot color : task.getResult()) {
                         colorsList.add(new Color((String)color.get("name"), color.getId()));
+                        System.out.println(colorsList);
                     }
+
+
                 }
             }
         });
+
+
         return colorsList.toArray(new Color[]{});
     }
+
 
     public Route[] getRoutes(Color color){
         final ArrayList<Route> routesList = new ArrayList<>();
